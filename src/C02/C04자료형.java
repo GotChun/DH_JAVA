@@ -64,12 +64,71 @@ public class C04자료형 {
 //	double : 8byte 실수(15-18자리) , 기본자료형
 	
 	//정밀도 확인
-	float n1 = 0.123445352354235325423F; //f,F : float 형 접미사   6~9자리에서부터 이상하게 나옴(올림처리)
-	double n2 = 0.123123124152352352345; 	//근데 실수는 웬만해서는 안쓰는게 좋다고함 !
+//	float n1 = 0.123445352354235325423F; //f,F : float 형 접미사   6~9자리에서부터 이상하게 나옴(올림처리)
+//	double n2 = 0.123123124152352352345; 	//근데 실수는 웬만해서는 안쓰는게 좋다고함 !
+//	
+//	System.out.println(n1);
+//	System.out.println(n2);
+	//--------------------------------------
+	//단일문자 char 2byte 정수
 	
-	System.out.println(n1);
-	System.out.println(n2);
+//	char ch1 = 'a';
+//	System.out.println(ch1);
+//	System.out.println((int)ch1); //01100001
+//	
+//	char ch2 = 98;		//'b'
+//	System.out.println(ch2);
+//	System.out.println((int)ch2); //01100010
+//	
+//	char ch3 = 'b'+1;	//99  =  c
+//	System.out.println(ch3);
+//	System.out.println((int)ch3); //01100011
+//	
+//	char ch4 = 'c'+2;
+//	System.out.println((char)ch4); //e
+//	System.out.println(ch4); //01100011  //출력은 e
+//		
+//	char ch5 = 0xac00;
+//	System.out.println(ch5); 
+//	
+////	System.out.println((char)0xac05);
+//	System.out.println((char)52199);
+//	System.out.println((char)52199);
+//	System.out.println((char)52199);
+//	System.out.println((char)52199);
+//	System.out.println((char)(52199)*3);
+//	
+//	System.out.printf("%c \n",'\uac00');
+//	
 	
+	//------------------------------------
+	//boolean : 논리형(true/false 저장)
+	//------------------------------------
+//		boolean flag = (10>11); 	//참(긍정)
+//		boolean ff = true;
+//		if(flag==ff) {
+//			System.out.println("참인경우 실행");
+//			
+//		}else {
+//			System.out.println("거짓말임");
+//		}
+//		
+
+		//클래스 자료형
+		// 클래스자료형으로 만든 변수는 '참조변수'라고 하고
+		// 참조변수는 데이터가 저장된 위치정보(메모리주소값)이 저장된다.
+		int n1 = 10;
+		byte n2 = 20;
+		char n3 = 40;
 		
+		String name= "홍길동";
+		String job = "프로그래머";
+		int g1 = 16;
+		System.out.println(name);
+		System.out.println(job);
+		System.out.println((short)g1);
+	for(int i=1;i<10;i++) {
+		System.out.println(name);
+	}
 	}
 }
