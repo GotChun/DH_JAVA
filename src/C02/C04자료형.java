@@ -104,15 +104,15 @@ public class C04자료형 {
 	//------------------------------------
 	//boolean : 논리형(true/false 저장)
 	//------------------------------------
-//		boolean flag = (10>11); 	//참(긍정)
-//		boolean ff = true;
-//		if(flag==ff) {
-//			System.out.println("참인경우 실행");
-//			
-//		}else {
-//			System.out.println("거짓말임");
-//		}
-//		
+		boolean flag = (10>11); 	//참(긍정)
+		boolean ff = true;
+		if(flag) {
+			System.out.println("참인경우 실행");
+			
+		}else {
+			System.out.println("거짓말임");
+		}
+		
 
 		//클래스 자료형
 		// 클래스자료형으로 만든 변수는 '참조변수'라고 하고
