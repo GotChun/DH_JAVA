@@ -51,10 +51,10 @@ public class C01while {
 //		System.out.println(sum);
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("정수 N 입력 :");
-		System.out.println("정수 M 입력 :");
-		int N = sc.nextInt();
-		int M = sc.nextInt();
+//		System.out.println("정수 N 입력 :");
+//		System.out.println("정수 M 입력 :");
+//		int N = sc.nextInt();
+//		int M = sc.nextInt();
 		// -----------------------------------
 //		int i=0;
 //		int sum=0;
@@ -191,13 +191,154 @@ public class C01while {
 //			dan++;
 //		}
 
-		while(N<=M) {
-			int i =1;
-			while(i<=9) {
-				System.out.printf("%d x %d = %d\n",N,i,N*i);
-				i++;
-			}N++;
-		}
+//		while(N<=M) {
+//			int i =1;
+//			while(i<=9) {
+//				System.out.printf("%d x %d = %d\n",N,i,N*i);
+//				i++;
+//			}N++;
+//		}
+
+//		int i = 5;
+
+
+//		i = 0;
+//		i ++ ;
+//		i<4;
+//
+//		for(int i=1;i<=4;i++) {
+//
+//			for(int j=1;j<=5;j++) {
+//			System.out.print("*");
+//			}
+//			System.out.print("\n");
+//
+//		}
+
+//int i =0;
+//	while(i<5) {
+//		int j =0;
+//		while(j<=i) {
+//			System.out.print("*");
+//			j++;
+//		}
+//		System.out.print("\n");
+//		i++;
+//	}
+//int n = sc.nextInt();	//줄의 개수
+//int m = sc.nextInt();	//별의 개수
+//	int i = 0;
+//	while(i<4) {
+//		int j=0;
+//		while(j<4-i) {
+//			System.out.print("*");
+//			j++;
+//		}
+//		System.out.print("\n");
+//		i++;
+//	}
+// i = 1 , j = 5
+
+//	  *			h1 = s1	공백3
+//   ***		h2 = s3 공백2
+//  *****		h3 = s5 공백1
+// *******		h4 = s7 공백0
+//  *****		h5 = s5 공백1
+//   ***		h6 = s3 공백2
+//    *  		h7 = s1 공백3
+
+		// 일단 삼각형부터!
+
+		// h1 s=1 b=3
+		// h2 s=3 b=2
+		// h3 s=5 b=1
+		// h4 s=7 b=0
+
+//		int i = 1;
+
+//	while(h<6) {
+//		int b = 0;
+//		while(b<5-h) {//012
+//			System.out.print(" ");
+//			b++;
+//		}
+//		int s = 0;
+//		while(s<2*h-1) {		//홀수로 찍으려면 처음부터 h를 1로 가정해야함
+//			System.out.print("*");
+//			s++;
+//		}
+//		System.out.println();
+//		h++;
+//	}
+		// 높이가 4
+		// h1 s=7 b=0 n=4
+		// h2 s=5 b=1 n=4
+		// h3 s=3 b=2 n=4
+		// h4 s=1 b=3 n=4
+//		int n = sc.nextInt();
+////	int m =sc.nextInt();
+//		while (i <= n) {
+//			int b = 0;
+//			while (b < i - 1) {
+//				System.out.print(" ");
+//				b++;
+//			}0
+//			int s = 0;
+//			while (s < (n - i) * 2 + 1) {
+//				System.out.print("*");
+//				s++;
+//			}
+//			System.out.println();
+//			i++;
+//		}
+//i 가 1
+
+//
+//		for(int i=0;i<=4;i++) {
+//			for(int j=0;j<4-i;j++) {
+//				System.out.print(" ");
+//			}
+//			for(int n=0;n<(i*2)-1;n++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//
+//		}
+
+		int i=0;
+		while(i<7) {
+			if(i<4) {
+				int j=0;
+				while(j<3-i) {
+					System.out.print(" ");
+					j++;
+				}
+				int k=0;
+				while(k<=2*i) {
+					System.out.print("*");
+					k++;
+				}
+
+
+			i++;}
+			else {
+				int j =0;
+				while(j<i-3) {
+					System.out.print(" ");
+					j++;
+				}
+				int k = 0;
+				while(k<=(6*2)-2*i) {	//i가 4라면 (12)-2*4 = 4 ==5번 반복
+					System.out.print("*");
+					k++;
+				}
+			i++;
+			}
+			System.out.println();
+
+	}
+
+
 
 	}
 }
