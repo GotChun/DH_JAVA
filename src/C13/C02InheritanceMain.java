@@ -11,7 +11,7 @@ class Point2D {
 		
 	Point2D(int x){
 		this.x = x;
-		System.out.println("Point2D(int x) 생성자 호출");		//오버라이드
+		System.out.println("Point2D(int x) 생성자 호출");		//오버로딩
 	}
 	Point2D(int x , int y){
 		this.x = x;

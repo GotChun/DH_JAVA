@@ -55,6 +55,7 @@ class Parttimer extends Employee{
 
 class Regular extends Employee{
 	int salary;
+	
 
 	Regular(String name, int age, String addr,int salary) {
 		super(name, age, addr);
@@ -79,7 +80,7 @@ public class C03EX {
 		Regular 직원 = new Regular("박대해",22,"대구",500000);
 		Parttimer 알바 = new Parttimer("아르바",55,"창녕",9900);
 //		직원.setSalary(300000);
-		System.out.println(직원.salary);
+		System.out.println(직원.age);
 		System.out.println(직원.getAge());
 		알바.showInfo();
 		직원.showInfo();
