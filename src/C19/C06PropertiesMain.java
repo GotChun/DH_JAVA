@@ -9,8 +9,8 @@ public class C06PropertiesMain {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-
-
+		
+		
 
 		//프로젝트 경로 확인
 		String dirPath = System.getProperty("user.dir");
@@ -21,14 +21,14 @@ public class C06PropertiesMain {
 		//패키지 경로
 		String packagePath = C06PropertiesMain.class.getPackageName();
 		System.out.println(packagePath);
-
+		
 		//파일경로
 		String filePath=dirPath+File.separator+"src"+File.separator+packagePath+File.separator+"application.properties";
 		FileInputStream fin = new FileInputStream(filePath);
-
+		
 		Properties properties = new Properties();
 		properties.load(fin);
-
+		
 		String url=properties.getProperty("url");
 		String username=properties.getProperty("username");
 		String password=properties.getProperty("password");

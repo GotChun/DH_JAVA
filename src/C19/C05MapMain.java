@@ -30,8 +30,7 @@ public class C05MapMain {
 		map.put("취미", hobby);
 
 
-		//최종목표 : 프리랜서
-		//현재 우선순위 : 실전에 투입되기 , 경험쌓기
+
 
 	}
 }
