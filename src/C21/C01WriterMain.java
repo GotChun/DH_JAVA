@@ -14,8 +14,8 @@ public class C01WriterMain {
 		fout.write("TEST2\n");		//여기 입력한 내용이 덮어쓰기가 됨
 		fout.write("TEST3\n");
 
-		fout.flush();
-		fout.close();
+		fout.flush();		//buffer 를 비움
+		fout.close();		//일단 뭘 닫음 근데 뭘 닫음?
 
 
 
@@ -23,3 +23,6 @@ public class C01WriterMain {
 
 	}
 }
+
+
+//정신차립시다 . ... . . . . !! ! ! !
