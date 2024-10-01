@@ -12,5 +12,6 @@
 	<classpathentry kind="lib" path="src/C21/jackson-core-asl-1.9.13.jar"/>
 	<classpathentry kind="lib" path="src/C21/jackson-databind-2.18.0.jar"/>
 	<classpathentry kind="lib" path="src/C21/selenium-server-4.25.0.jar"/>
+	<classpathentry kind="lib" path="src/C23/mysql-connector-j-9.0.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

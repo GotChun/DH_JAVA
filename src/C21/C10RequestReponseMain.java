@@ -11,6 +11,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+
+
 public class C10RequestReponseMain {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
@@ -23,8 +25,9 @@ public class C10RequestReponseMain {
 
 		// http Request 구조화 , 객체 생성
 		HttpRequest httpRequest = HttpRequest.newBuilder() // http 리퀘스트 객체를 만드는 작업
-				.uri(URI.create(url)).GET() // 가져온다 (뭐를?)
-				.build(); // 생성 디자인패턴
+							.uri(URI.create(url))
+							.GET() // 가져온다 (뭐를?)
+							.build(); // 생성 디자인패턴
 
 		// http 요청 request 객체로 요청 & 응답 확인
 		HttpClient httpClient = HttpClient.newHttpClient(); // 객체생성
@@ -35,7 +38,7 @@ public class C10RequestReponseMain {
 		ObjectMapper objectMapper = new ObjectMapper();
 
 //		//JAVA CLASS 로 변환
-		 Root responseData = objectMapper.readValue(response.body(), Root.class);
+		Root responseData = objectMapper.readValue(response.body(), Root.class);
 		 System.out.println("status : " + responseData.getStatus());
 		 System.out.println("total : " + responseData.getTotal());
 
@@ -43,16 +46,17 @@ public class C10RequestReponseMain {
 		 System.out.println("data[1] : " + responseData.getData().get(1));
 		 System.out.println("data[2] : " + responseData.getData().get(2));
 
-		// JSON TYPE 변환\
-		JsonNode jsonNode = objectMapper.readTree(response.body());
-		System.out.println("Status : " + jsonNode.get("status"));
-		System.out.println("Count : " + jsonNode.get("total"));
-		JsonNode jsonArray = jsonNode.get("data");
+//		// JSON TYPE 변환\
+//		JsonNode jsonNode = objectMapper.readTree(response.body());
+//		System.out.println("Status : " + jsonNode.get("status"));
+//		System.out.println("Count : " + jsonNode.get("total"));
+//		JsonNode jsonArray = jsonNode.get("data");
 		
 //		for(int i=0;i<10;i++) {
 //			
 //		}
-
+	
+	}
 		// import com.fasterxml.jackson.databind.ObjectMapper; // version 2.11.1
 		// import com.fasterxml.jackson.annotation.JsonProperty; // version 2.11.1
 		/*
@@ -292,6 +296,5 @@ public class C10RequestReponseMain {
 
 		}
 
-	}
-
 }
+
