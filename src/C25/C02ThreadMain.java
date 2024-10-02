@@ -6,6 +6,7 @@ public class C02ThreadMain {
 
 
 
+
 		// 다중 스레드라는건 여러개의 작동을 한번에 처리하는 거 같은데
 		//Runnable Interface 이용한 스레드 분할
 
@@ -22,17 +23,38 @@ public class C02ThreadMain {
 		th1.start();
 		th2.start();
 
+	
+
+
+		//------------------------
+		//Thread 를 이용한 스레드 분
+
+		new Thread() {
+
+			@Override
+			public void run() {
+				for(int i=0;i<5;i++) {
+					System.out.println("TASK03..");
+					try {
+						Thread.sleep(300);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+
+			}
+
+
+		}.start();
+
+		
 		//04 MAIN 스레드 작업
 		for(int i=0;i<12;i++) {
 			System.out.println("MAIN THREAD..!");
 			Thread.sleep(500);
 		}
 
-  
-		
-		
-		
-		
 		//신경쓰지마 다른사람 신경쓸 여유없다
 	}
 }

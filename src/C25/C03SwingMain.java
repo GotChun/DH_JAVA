@@ -92,22 +92,37 @@ class C03GUI extends JFrame implements ActionListener, KeyListener {
 		if (e.getSource() == btn1) {				//버튼 눌리면 반응
 			System.out.println("btn1..clicked!");
 			//area1 시작
-			C03Worker1 w1 = new C03Worker1(this);  //swing 객체 주소 전달
-			Thread t1 = new Thread(w1);
-			t1.start();
+			if(th1==null) {
+				C03Worker1 w1 = new C03Worker1(this);  //swing 객체 주소 전달
+				th1 = new Thread(w1);
+				th1.start();
+			}
+
 		}
 
 		if (e.getSource() == btn2) {
 			System.out.println("btn2..clicked!");
-
+			if(th1!=null) {
+				th1.interrupt(); //객체를 만든다 ?
+				th1=null;
+			}
 		}
 		if (e.getSource() == btn3) {
 			System.out.println("btn3..clicked!");
 			//area2(2번 구역?박스) 시작
+			if(th2==null) {
+				C03Worker2 w2 = new C03Worker2(this);  //swing 객체 주소 전달
+				th2 = new Thread(w2);
+				th2.start();
+			}
 		}
 		if (e.getSource() == btn4) {
 			System.out.println("btn4..clicked!");
 			// 스레드2 중지
+			if(th2!=null) {		//th2 가 널이라면 작업종료시키게
+				th2.interrupt();
+				th2=null;				
+			}
 
 		}
 
