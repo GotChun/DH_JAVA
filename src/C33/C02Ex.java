@@ -17,19 +17,19 @@ class Calc{
 //		return hab;
 
 		//----------------스트림식으로
-		return Arrays 
+		return Arrays
 			.stream(su)
 			.boxed()
 			.reduce(0,(sum,el)->sum+el);
 		};
-		
+
 	}
 	functional sub = (sb)->{
 		return Arrays.stream(sb)
 				.boxed()
-				.sorted(Comparator.reverseOrder())		
-				.reduce((a,b)->b-a)		
-				.orElse(0);		//orElse(0) 가 아니라 if 문으로 값이 비어있다면 그대로 b를 반환 아니라면 
+				.sorted(Comparator.reverseOrder())
+				.reduce((a,b)->b-a)
+				.orElse(0);		//orElse(0) 가 아니라 if 문으로 값이 비어있다면 그대로 b를 반환 아니라면
 
 	};
 
@@ -50,7 +50,7 @@ class Calc{
 			//각각에 람다 스트림으로 적절히 기능구현을 하라
 			//가변인자 처리로 구현
 			//뺄셈 , 나눗셈은 큰 수에서 작은수로 정렬 한다음 누적 감산 처리(reduce) 를 하라
-
+		//왜 정답은 생성자 안에다가 사용하는지 ?
 	}
 
 }
